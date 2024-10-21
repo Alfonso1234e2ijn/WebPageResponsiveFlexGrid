@@ -1,0 +1,176 @@
+/* Estils generals per pantalles grans (osigui d'escriptori) */
+body {
+  background-color: rgb(146, 227, 227); /* Fons de color blau clar */
+}
+
+#h1 {
+  text-align: center; /* Centra el text del h1 */
+}
+
+.h3 {
+  text-align: center; /* Centra el text dels elements amb classe h3 */
+}
+
+#div1 {
+  padding: 20px; /* Espai intern de 20px */
+  background-color: white; /* Fons blanc */
+  display: flex; /* Layout en columna amb flexbox */
+  flex-direction: column; 
+  align-items: center; /* Centra elements horitzontalment */
+  justify-content: center; /* Centra elements verticalment */
+  gap: 10px; /* Espai entre elements fills */
+  margin-left: 34%; /* Marge esquerre del 34% */
+  margin-right: 34%; /* Marge dret del 34% */
+  border-radius: 20px; /* Cantonades arrodonides */
+}
+
+p {
+  font-size: 24px; /* Mida de font de 24px */
+}
+
+#div2 {
+  display: flex; /* Layout en fila amb flexbox */
+  flex-direction: row; 
+  justify-content: center; /* Centra elements horitzontalment */
+  align-items: flex-start; /* Alinea elements a l'inici verticalment */
+  gap: 40px; /* Espai de 40px entre elements fills */
+  margin-left: 20%; /* Marge esquerre del 20% */
+  margin-right: 20%; /* Marge dret del 20% */
+  border-radius: 20px; /* Cantonades arrodonides */
+}
+
+.text-img-pair {
+  display: flex; /* Layout en columna amb flexbox */
+  flex-direction: column; 
+  align-items: center; /* Centra elements horitzontalment */
+  gap: 20px; /* Espai de 20px entre elements fills */
+  margin: 20px 0; /* Marge vertical de 20px */
+}
+
+.responsive-img {
+  width: 100%; /* Amplada de la imatge al 100% */
+  height: auto; /* Alçada ajustada automàticament */
+}
+
+.container {
+  display: flex; /* Layout en fila amb flexbox */
+  justify-content: center; /* Centra elements horitzontalment */
+  align-items: center; /* Centra elements verticalment */
+  gap: 10px; /* Espai de 10px entre elements fills */
+}
+
+.button {
+  flex-direction: row; /* Layout de botons en fila */
+  padding: 5px; /* Espai intern de 5px */
+  background-color: beige; /* Fons de color beix */
+  border-radius: 20px; /* Cantonades arrodonides */
+}
+
+.page-container {
+  display: flex; /* Layout en columna amb flexbox */
+  flex-direction: column;
+  min-height: 100vh; /* Altura mínima del 100% de la finestra */
+}
+
+.contacteContainer {
+  flex-grow: 1; /* S'expandeix per omplir espai disponible */
+  display: flex; /* Layout en columna amb flexbox */
+  flex-direction: column; 
+  justify-content: center; /* Centra elements verticalment */
+  align-items: center; /* Centra elements horitzontalment */
+  gap: 20px; /* Espai de 20px entre elements fills */
+}
+
+.contacteContainer input {
+  width: 100%; /* Amplada completa del contenidor pare */
+  max-width: 400px; /* Amplada màxima de 400px */
+  padding: 10px; /* Espai intern de 10px */
+  font-size: 16px; /* Mida de font de 16px */
+  border: 1px solid #ccc; /* Borde de 1px i gris clar */
+  border-radius: 4px; /* Cantonades arrodonides */
+}
+
+#footerContacte {
+  display: flex; /* Layout en fila amb flexbox */
+  justify-content: center; /* Centra el contingut horitzontalment */
+  padding: 40px; /* Espai intern de 40px */
+  background-color: #8b96a5; /* Fons gris-blau */
+}
+
+/* Media Queries per ajustar a pantalles mitjanes (tablets) */
+@media (max-width: 1024px) {
+  #div1 {
+    margin-left: 20%; /* Redueix marge esquerre al 20% */
+    margin-right: 20%; /* Redueix marge dret al 20% */
+  }
+
+  #div2 {
+    margin-left: 15%; /* Redueix marge esquerre al 15% */
+    margin-right: 15%; /* Redueix marge dret al 15% */
+  }
+
+  p {
+    font-size: 20px; /* Redueix mida de font a 20px */
+  }
+
+  .contacteContainer input {
+    max-width: 350px; /* Redueix amplada màxima dels inputs a 350px */
+  }
+}
+
+/* Media Queries per pantalles petites (teléfons mòvils) */
+@media (max-width: 768px) {
+  #div1 {
+    margin-left: 10%; /* Redueix marge esquerre al 10% */
+    margin-right: 10%; /* Redueix marge dret al 10% */
+    padding: 15px; /* Redueix padding a 15px */
+  }
+
+  #div2 {
+    flex-direction: column; /* Canvia la disposició a columna */
+    margin-left: 5%; /* Redueix marge esquerre al 5% */
+    margin-right: 5%; /* Redueix marge dret al 5% */
+    gap: 20px; /* Redueix espai entre elements a 20px */
+  }
+
+  p {
+    font-size: 18px; /* Redueix mida de font a 18px */
+  }
+
+  .text-img-pair {
+    gap: 10px; /* Redueix espai entre elements a 10px */
+    margin: 10px 0; /* Redueix marge vertical a 10px */
+  }
+
+  .container {
+    flex-direction: column; /* Canvia la disposició a columna */
+    gap: 5px; /* Redueix espai entre elements a 5px */
+  }
+
+  .contacteContainer input {
+    max-width: 300px; /* Redueix amplada màxima a 300px */
+    font-size: 14px; /* Redueix mida de font a 14px */
+  }
+
+  #footerContacte {
+    padding: 20px; /* Redueix padding a 20px */
+  }
+}
+
+/* Media Queries per pantalles extra petites (telefons mes petits) */
+@media (max-width: 480px) {
+  #div1 {
+    margin-left: 5%; /* Redueix marge esquerre al 5% */
+    margin-right: 5%; /* Redueix marge dret al 5% */
+    padding: 10px; /* Redueix padding a 10px */
+  }
+
+  p {
+    font-size: 16px; /* Redueix mida de font a 16px */
+  }
+
+  .contacteContainer input {
+    max-width: 100%; /* Inputs ocupen tot l'amplada disponible */
+    font-size: 12px; /* Redueix mida de font a 12px */
+  }
+}
